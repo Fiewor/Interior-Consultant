@@ -1,8 +1,8 @@
-const ham = document.querySelector(".hamburger");
-const menu = document.querySelector("header ul");
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu-items");
 const menuItem = document.querySelectorAll(".menu-item");
 
-ham.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
     toggle();
 });
 
@@ -15,6 +15,6 @@ menuItem.forEach((item) => {
 });
 
 function toggle() {
-    ham.classList.toggle("open");
+    menuBtn.classList.toggle("open");
     menu.classList.toggle("open");
 }
